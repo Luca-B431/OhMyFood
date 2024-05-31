@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99e2d0;
+  --color4: #99e2d0;
+  --color5: #008766;
+  --color6: #89c8fa;
+  --color7: #003a68;
+  --color8: #9356dc;
+}
+
+body {
+  /* font-family */
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
