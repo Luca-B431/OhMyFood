@@ -5,14 +5,16 @@
 }
 
 :root {
-  --primary-color: #9356dc;
-  --secondary-color: #ff79da;
-  --tertiary-color: #99e2d0;
-  --color4: #99e2d0;
-  --color5: #008766;
-  --color6: #89c8fa;
-  --color7: #003a68;
-  --color8: #9356dc;
+  --white: #fff;
+  --white-medium: #f3f3f3;
+  --grey-light: #eaeaea;
+  --pink: #ff79da;
+  --purple: #9356dc;
+  --green-light: #99e2d0;
+  --green: #008766;
+  --blue-light: #89c8fa;
+  --blue: #003a68;
+  --background-color: var(--white);
 }
 
 body {
@@ -22,8 +24,26 @@ body {
   font-style: normal;
 }
 
-.font-title {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
+@layer utilities {
+  .font-title {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .font24x700 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .font16x500 {
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
