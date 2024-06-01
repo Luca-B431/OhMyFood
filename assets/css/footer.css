@@ -1,0 +1,25 @@
+footer {
+  color: white;
+  background-color: var(--footer-color);
+  padding: 22px 25px;
+
+  .ftr-title {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0px 0px 16px 0px;
+  }
+
+  article {
+    &:first-child {
+      padding-top: 16px;
+    }
+    &:nth-last-child(n-3) {
+      padding-top: 7px;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

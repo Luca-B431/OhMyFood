@@ -69,8 +69,71 @@
 
   .container__restaurant--grid {
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: 1fr;
     gap: 10px;
+    margin-top: 20px;
+
+    .cell-grid {
+      background-color: white;
+      height: 251px;
+      border: solid 3px white;
+      border-radius: 25px;
+      padding: 2px;
+      box-shadow: 0px 4px 15px 0px #0000001a;
+      overflow: hidden;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+
+      .cell-part1 {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          height: 175px;
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+          object-fit: cover;
+          position: relative;
+          z-index: 2;
+        }
+
+        .img__tab {
+          color: var(--green);
+          background-color: var(--green-light);
+          margin: 15px 15px 0px 0px;
+          border-radius: 2px;
+          font-weight: 500;
+          font-size: 14px;
+          padding: 5px;
+          position: absolute;
+          z-index: 3;
+        }
+      }
+
+      .cell-part2 {
+        color: black;
+        height: 110%;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+
+        span {
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        p {
+          padding-top: 2px;
+        }
+
+        svg {
+          &:hover {
+            background-color: var(--purple);
+          }
+        }
+      }
+    }
   }
 }
