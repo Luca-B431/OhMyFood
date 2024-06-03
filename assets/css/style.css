@@ -10,6 +10,11 @@
   --grey-light: #eaeaea;
   --pink: #ff79da;
   --purple: #9356dc;
+  --purple-gradient: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
   --green-light: #99e2d0;
   --green: #008766;
   --blue-light: #89c8fa;
@@ -74,8 +79,8 @@ body {
 
   /* green border subtitles ENTREE-PLAT-DESSERT */
   .greenborder {
-    border-bottom: #99e2d0 3px solid;
-    height: 30px;
+    border-bottom: solid 3px #99e2d0;
     width: 40px;
+    height: 27px;
   }
 }
