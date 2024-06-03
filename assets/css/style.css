@@ -43,8 +43,39 @@ body {
     font-size: 24px;
   }
 
+  .font18x500 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
   .font16x500 {
     font-weight: 500;
     font-size: 16px;
+  }
+
+  .font16x300 {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .font15x700 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .font15x300 {
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .width {
+    width: 100%;
+  }
+
+  /* green border subtitles ENTREE-PLAT-DESSERT */
+  .greenborder {
+    border-bottom: #99e2d0 3px solid;
+    height: 30px;
+    width: 40px;
   }
 }
