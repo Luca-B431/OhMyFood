@@ -33,56 +33,84 @@ main {
     z-index: 2;
     padding: 32px 17px 40px 17px;
 
-    .menu--title {
+    .container__title {
       display: flex;
       justify-content: space-between;
-      font-size: 28px;
-      font-weight: 400;
-      margin-left: 10px;
+      align-items: center;
 
-      .oui {
-        input[type="checkbox"] {
-          display: none;
-        }
-
-        svg {
-          cursor: pointer;
-          transition: fill 0.3s;
-        }
-
-        input[type="checkbox"]:checked + svg {
-          fill: transparent;
-          stroke: rgb(0, 0, 0);
-        }
+      .menu--title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 28px;
+        font-weight: 400;
+        margin-left: 10px;
       }
+    }
 
-      .container__menu--grid {
-        .grid--split {
-          display: grid;
-          grid-template-columns: repeat(1fr);
-          grid-template-rows: repeat(4, 1 fr);
-          gap: 12px;
-          margin-top: 40px;
+    .container__menu--grid {
+      .grid--split {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(4, 1 fr);
+        gap: 12px;
+        margin-top: 40px;
 
-          article {
+        .slidetab {
+          appearance: none;
+        }
+
+        .article {
+          display: flex;
+          width: 100%;
+          background-color: rgb(255, 255, 255);
+          border-radius: 15px;
+          box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+          overflow: hidden;
+          cursor: pointer;
+
+          .container__article {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: end;
-            padding: 13.5px 15px;
-            background-color: rgb(255, 255, 255);
-            border-radius: 15px;
-            box-shadow: 0px 4.01px 15.04px 0px #0000001a;
+            padding: 5px;
+            align-items: end;
+            margin-right: -59px;
+          }
 
-            p {
-              font-size: 15px;
-              font-weight: 300;
-              margin-top: 1.5px;
+          span {
+            transition: transform 350ms ease-out;
+          }
+
+          &:active {
+            span {
+              transform: translateX(-59px);
             }
+
+            .gliss__tab {
+              transform: translateX(0);
+            }
+          }
+
+          .gliss__tab {
+            height: 69px;
+            width: 59px;
+            border-radius: 0px 15px 15px 0px;
+            background-color: var(--green-light);
+            transform: translateX(59px);
+            transition: transform 350ms ease-out;
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: 300;
+            margin-top: 1.5px;
           }
         }
       }
     }
   }
+
   .container__button {
     display: flex;
     justify-content: center;
@@ -122,6 +150,27 @@ main {
         background: rgba(255, 255, 255, 0.15);
         transition: opacity 150ms;
       }
+    }
+  }
+
+  .heart__checkbox {
+    #heart {
+      appearance: none;
+      height: 0px;
+      width: 0px;
+      cursor: pointer;
+    }
+
+    svg path {
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+      transition: fill 0.3s;
+    }
+
+    input[type="checkbox"]:not(:checked) + svg path {
+      fill: transparent;
+      stroke: #000;
     }
   }
 }
