@@ -17,10 +17,10 @@ footer {
       justify-content: space-between;
       gap: 40px;
       margin-right: 100px;
-      align-items: flex-end;
 
       div {
         display: flex;
+        flex-direction: row;
         gap: 10px;
       }
     }
