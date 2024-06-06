@@ -58,6 +58,11 @@ body {
     font-size: 16px;
   }
 
+  .font16x400 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
   .font16x300 {
     font-weight: 300;
     font-size: 16px;
