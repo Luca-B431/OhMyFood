@@ -1,3 +1,4 @@
+spa,
 .header__container {
   img {
     height: 36px;
@@ -138,9 +139,15 @@ main {
   align-items: end;
   margin-right: -59px;
 
-  .price {
-    transition: transform 350ms ease-out;
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
   }
+}
+
+.price {
+  transition: transform 350ms ease-out;
 }
 
 .container__article p {
